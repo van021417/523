@@ -1,0 +1,5 @@
+rootProject.name='ModernLoginRegister'
+include ':app'
+include ':appdashboard'
+include ':qrg'
+include ':dropdown'
