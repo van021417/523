@@ -1,8 +1,10 @@
 package com.amier.modernloginregister;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -17,11 +19,16 @@ public class Log extends AppCompatActivity {
     TextInputEditText textInputEditTextemail2, textInputEditTextpassword2;
     Button btnRegLogin, btnLogin;
     Button button;
+    private String sharedpref="modernloginregister";
+    SharedPreferences.Editor editor;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        sharedPreferences=getSharedPreferences(sharedpref, MODE_PRIVATE);
+        editor=sharedPreferences.edit();
 
         textInputEditTextemail2=findViewById(R.id.email2);
         textInputEditTextpassword2=findViewById(R.id.password2);
@@ -41,8 +48,6 @@ public class Log extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final String  email, password;
-
-
                 email = String.valueOf(textInputEditTextemail2.getText());
                 password = String.valueOf(textInputEditTextpassword2.getText());
 
@@ -69,6 +74,8 @@ public class Log extends AppCompatActivity {
                                     if(result.equals("Login Success")){
                                         Toast.makeText(getApplicationContext(),result, Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent((getApplicationContext()), MainActivity1.class);
+                                      editor.putString("useremail",email);
+                                      editor.apply();
                                         startActivity(intent);
                                         finish();
 

@@ -5,9 +5,15 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -29,19 +35,31 @@ public class Profile extends AppCompatActivity {
     String value;
     String result;
     HttpURLConnection httpURLConnection;
-    TextView name,address, email;
+    private String sharepref="modernloginregister";
+    TextView name,address, email, mobile, user;
+    SharedPreferences sharedPreferences;
     Bundle extras;
+
+
+
 
     ImageButton address1;
     @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        getJSON("http://192.168.1.24/LoginRegister/get.php");
+       sharedPreferences=getSharedPreferences(sharepref,MODE_PRIVATE);
+       value=sharedPreferences.getString("useremail","");
+        Log.d("useremail",value
+        );
+        getJSON("http://192.168.1.24/LoginRegister/get.php?useremail="
+        +value);
 
         name = (TextView) findViewById(R.id.name);
         address = (TextView) findViewById(R.id.address);
         email = (TextView) findViewById(R.id.email);
+        mobile = (TextView) findViewById(R.id.mobile);
+        user = (TextView) findViewById(R.id.user);
      }
 
     @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
@@ -95,10 +113,14 @@ public class Profile extends AppCompatActivity {
             name.setVisibility(View.VISIBLE);
             email.setVisibility(View.VISIBLE);
             address.setVisibility(View.VISIBLE);
+            mobile.setVisibility(View.VISIBLE);
+            user.setVisibility(View.VISIBLE);
 
             name.setText(obj.getString("name"));
             email.setText(obj.getString("email"));
             address.setText(obj.getString("address"));
+            mobile.setText(obj.getString("mobile"));
+            user.setText(obj.getString("user"));
         }
     }
 }

@@ -32,60 +32,32 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:padding="5dp"
-                    android:src="@drawable/person"
+                    android:padding="1dp"
+                    android:src="@drawable/home"
+                    android:layout_marginStart="5dp"
                     />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
                     android:text="Address"
-                    android:textSize="16sp"
-                    android:layout_margin="5dp"
-                    android:textStyle="bold|normal"
-                    android:textColor="@color/black"/>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="1dp">
-
-                <ImageButton
-                    android:id="@+id/address1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:padding="5dp"
-                    android:src="@drawable/add" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:text="Add Information"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold|normal" />
+                    android:textSize="20sp"
+                    android:textStyle="bold|normal"
+                    android:layout_marginStart="7dp"/>
 
 
             </LinearLayout>
+
         </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:padding="2dp"
-                android:src="@drawable/home"
-                android:layout_marginStart="10dp"
-                app:tint="@color/black" />
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,15 +72,7 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     android:gravity="center"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cavite"
-                    android:textSize="13sp"
-                    android:textColor="@color/black"
-                    android:textStyle="normal"
-                    android:gravity="center"
+                    android:layout_marginStart="46dp"
                     />
 
 

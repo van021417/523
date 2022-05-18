@@ -10,8 +10,8 @@
     android:id="@id/textView2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
-    android:text="UI Register"
+    android:layout_marginTop="19dp"
+    android:text="LAKBAY"
     android:textColor="@color/colorPrimary"
     android:textSize="42sp"
     android:textStyle="bold"
@@ -22,7 +22,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="210dp"
-        android:layout_height="450dp"
+        android:layout_height="500dp"
         android:background="@drawable/ic_register_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginTop="30dp"
         app:cardCornerRadius="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +80,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+
+            >
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -117,9 +120,8 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginTop="6dp"
-                android:layout_marginBottom="24dp"
                 android:paddingStart="6dp"
                 android:paddingEnd="6dp"
                 app:passwordToggleEnabled="true">
@@ -132,6 +134,41 @@
                     android:drawablePadding="6dp"
                     android:hint="Password"
                     android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_mobile"
+                    android:drawablePadding="6dp"
+                    android:hint="Mobile Number"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="24dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_address"
+                    android:drawablePadding="6dp"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

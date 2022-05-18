@@ -19,33 +19,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="3dp"
+            android:padding="5dp"
             >
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/phone"
-                android:padding="2dp"
+                android:padding="1dp"
                 android:layout_marginStart="5dp"/>
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Mobile"
-               android:layout_gravity="center"
-               android:layout_marginStart="10dp"
-               android:textSize="14sp"
-               android:textStyle="bold"
-               android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:text="Mobile"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
         <TextView
             android:id="@+id/mobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="09776839307"
+            android:text=""
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:layout_marginStart="25dp"
+            android:textSize="17sp"
+            android:layout_marginStart="47dp"
             android:layout_marginBottom="15dp"/>
     </LinearLayout>
 

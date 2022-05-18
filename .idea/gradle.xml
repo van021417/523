@@ -13,8 +13,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/appdashboard" />
-            <option value="$PROJECT_DIR$/dropdown" />
-            <option value="$PROJECT_DIR$/qrg" />
           </set>
         </option>
       </GradleProjectSettings>

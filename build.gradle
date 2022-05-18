@@ -2,6 +2,7 @@
 //file:noinspection DifferentKotlinGradleVersion
 
 buildscript {
+    ext.kotlin_version = '1.7.0-Beta'
     ext.kotlin_version = '1.6.21'
     repositories {
         google()
