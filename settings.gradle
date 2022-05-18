@@ -1,3 +1,4 @@
 rootProject.name='ModernLoginRegister'
 include ':app'
 include ':appdashboard'
+include ':qrgenerator'

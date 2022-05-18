@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-
+import com.cambotutorial.sovary.qrgen.MainQr;
 
 public class MainActivity1 extends AppCompatActivity implements View.OnClickListener {
 
@@ -62,7 +62,7 @@ public class MainActivity1 extends AppCompatActivity implements View.OnClickList
             i = new Intent(this, TransactionHistory.class);
             startActivity(i);
         } else if (id == cardRideNow.getId()) {
-            i = new Intent(this, Profile.class);
+            i = new Intent(this, MainQr.class);
             startActivity(i);
         }
 
