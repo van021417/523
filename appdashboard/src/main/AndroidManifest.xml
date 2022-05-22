@@ -16,10 +16,6 @@
             android:exported="false"
             android:parentActivityName=".MainActivity1" />
         <activity
-            android:name=".TransactionHistory"
-            android:exported="false"
-            android:parentActivityName=".MainActivity1" />
-        <activity
             android:name=".Settings"
             android:exported="false"
             android:parentActivityName=".MainActivity1" />
@@ -27,6 +23,18 @@
             android:name=".Profile"
             android:exported="false"
             android:parentActivityName=".MainActivity1" />
+        <activity
+            android:name=".DriverDB"
+            android:exported="false" />
+        <activity
+            android:name=".DriverProfile"
+            android:exported="false"
+            android:parentActivityName=".DriverDB" />
+        <activity
+            android:name=".DriverTransactionHistory"
+            android:exported="false"
+            android:parentActivityName=".DriverDB" />
+
         <activity
             android:name=".MainActivity1"
             android:exported="true" />

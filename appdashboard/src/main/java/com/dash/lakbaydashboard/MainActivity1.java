@@ -1,15 +1,16 @@
 package com.dash.lakbaydashboard;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.cambotutorial.sovary.qrgen.MainQr;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
+import com.journaldev.barcodevisionapi.Qrgenerator;
+
 
 public class MainActivity1 extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,7 +19,7 @@ public class MainActivity1 extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main1);
         cardProf = findViewById(R.id.cardProf);
 
         cardEwallet = findViewById(R.id.cardEwallet);
@@ -58,11 +59,8 @@ public class MainActivity1 extends AppCompatActivity implements View.OnClickList
         } else if (id == cardEwallet.getId()) {
             i = new Intent(this, EWallet.class);
             startActivity(i);
-        } else if (id == cardTransaction.getId()) {
-            i = new Intent(this, TransactionHistory.class);
-            startActivity(i);
-        } else if (id == cardRideNow.getId()) {
-            i = new Intent(this, MainQr.class);
+        }  else if (id == cardRideNow.getId()) {
+            i = new Intent(this, Qrgenerator.class);
             startActivity(i);
         }
 

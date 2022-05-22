@@ -13,9 +13,10 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_register)
 
-        binding.btnLogRegister.setOnClickListener {
+       binding.btnLogRegister.setOnClickListener {
             onBackPressed()
         }
 

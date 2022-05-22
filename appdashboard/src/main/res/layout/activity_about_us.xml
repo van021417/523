@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bggg_logreg"
     tools:context=".AboutUs">
 
     <TextView
@@ -30,19 +31,19 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="LAKBAY"
-        android:textSize="24sp"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="128dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="128dp" />
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="50dp"
-        android:background="#A48FDF"
+        android:background="#00A48FDF"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="1dp">
 
         <TextView
             android:id="@+id/textView"
@@ -50,9 +51,12 @@
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
             android:fontFamily="sans-serif-smallcaps"
             android:gravity="center"
             android:text="@string/about_us"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
             android:textAlignment="textEnd"
             android:textSize="20sp" />
     </LinearLayout>

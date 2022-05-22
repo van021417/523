@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bggg_logreg"
     tools:context=".Profile">
 
 
     <TextView
         android:id="@+id/text_address"
-        android:layout_width="wrap_content"
+        android:layout_width="71dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
@@ -17,9 +18,12 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="46dp"
         android:layout_marginTop="92dp"
-        android:layout_marginRight="306dp"
+        android:layout_marginRight="294dp"
         android:layout_marginBottom="620dp"
-        android:text="Address" />
+        android:text="Address"
+        android:textColor="#38220f"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edit_email"
@@ -78,6 +82,9 @@
         android:layout_marginTop="191dp"
         android:layout_marginRight="257dp"
         android:layout_marginBottom="521dp"
+        android:textColor="#38220f"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:text="Mobile Number" />
 
     <TextView
@@ -92,19 +99,26 @@
         android:layout_marginTop="302dp"
         android:layout_marginRight="250dp"
         android:layout_marginBottom="403dp"
+        android:textColor="#38220f"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:text="Email Address" />
 
     <Button
         android:id="@+id/update"
-        android:layout_width="wrap_content"
+        android:layout_width="118dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="175dp"
+        android:layout_marginLeft="157dp"
         android:layout_marginTop="407dp"
-        android:layout_marginRight="142dp"
+        android:layout_marginRight="136dp"
         android:layout_marginBottom="276dp"
-        android:text="Update" />
+        android:backgroundTint="#38220f"
+        android:color="#E5E0D5"
+        android:text="Update"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </RelativeLayout>
