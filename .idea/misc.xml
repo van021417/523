@@ -59,10 +59,12 @@
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_passewallet.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_profile.xml" value="0.26145833333333335" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_qrgenerator.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_register.xml" value="0.14012738853503184" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_ridenow.xml" value="0.33" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_settings.xml" value="0.1765625" />
-        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_show.xml" value="0.33" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_show.xml" value="0.25" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_show_analytics.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_show_analytics1.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_transaction_history.xml" value="0.1765625" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_update.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/app/src/main/res/layout/activity_viewdriver.xml" value="0.33" />
@@ -121,6 +123,8 @@
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/appdashboard/src/main/res/menu/main_menu.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/destination/src/main/res/drawable-v24/profile_mobile_bg.xml" value="0.3325" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/destination/src/main/res/layout/activity_destination.xml" value="0.39266304347826086" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/destination/src/main/res/layout/drpdn_qual.xml" value="0.23278985507246377" />
+        <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/destination/src/main/res/layout/spnr_qualification.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/dropdown/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/dropdown/src/main/res/layout/dropdown_main.xml" value="0.31521739130434784" />
         <entry key="..\:/Users/Win10/AndroidStudioProjects/FinalLogin-master/dropdownmenu/src/main/res/layout/dropdown_main.xml" value="0.31521739130434784" />

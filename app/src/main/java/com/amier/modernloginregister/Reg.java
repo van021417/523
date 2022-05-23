@@ -3,6 +3,7 @@ package com.amier.modernloginregister;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -64,9 +65,20 @@ Button btnLogRegister;
 
                 if (!name.equals("") && !email.equals("") && !password.equals("") && !mobile.equals("") && !address.equals("")) {
                     register();
+                } else if (!name.matches("[a-z,A-Z]*")) {
+                    Toast.makeText(getApplicationContext(), "Enter only letters.", Toast.LENGTH_SHORT).show();
+                } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches() ) {
+                    Toast.makeText(getApplicationContext(), "Please enter valid Email Address.", Toast.LENGTH_SHORT).show();
+                } else if (password.length()<6) {
+                    Toast.makeText(getApplicationContext(), "Please enter password minimum of 6 characters.", Toast.LENGTH_SHORT).show();
+                } else if (!mobile.matches("[0-9]{11}")) {
+                    Toast.makeText(getApplicationContext(), "Enter only 11 digit numbers.", Toast.LENGTH_SHORT).show();
+                } else if (address.length() == 0 ) {
+                    Toast.makeText(getApplicationContext(), "Please enter Address.", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "All Fields Required", Toast.LENGTH_SHORT).show();
                 }
+
             }
     });
 }
@@ -111,5 +123,6 @@ Button btnLogRegister;
         RequestQueue requestQueue= Volley.newRequestQueue(Reg.this);
         requestQueue.add(stringRequest);
     }
+
 
 }

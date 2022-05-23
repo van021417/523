@@ -8,18 +8,12 @@
     android:background="@drawable/bg3"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Profile"
-
-    >
-
+    tools:context=".Profile">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-
     </LinearLayout>
-
     <include
         layout="@layout/photo"
         android:layout_width="match_parent"
@@ -27,22 +21,24 @@
         android:layout_gravity="center"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <include layout="@layout/address" />
-
             <include layout="@layout/mobile" />
-
             <include layout="@layout/email" />
         </LinearLayout>
 
     </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Info"
+        android:visibility="gone"
+        android:id="@+id/btnupdate">
+    </Button>
 </LinearLayout>

@@ -25,6 +25,12 @@
             android:name=".EditDriverInof"
             android:exported="true" />
         <activity
+            android:name=".ShowAnalytics"
+            android:exported="true" />
+        <activity
+            android:name=".ViewUsersRides"
+            android:exported="true" />
+        <activity
             android:name=".Log"
             android:exported="true" >
             <intent-filter>

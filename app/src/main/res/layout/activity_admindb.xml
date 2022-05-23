@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@id/editFare"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="12dp"
         android:layout_marginBottom="12dp"
         android:text="ADMIN"
@@ -31,7 +31,7 @@
         android:layout_columnWeight="1"
         android:layout_gravity="center"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="140dp"
         android:layout_marginEnd="-100dp"
         android:layout_marginBottom="11dp"
         app:cardBackgroundColor="#967259"
@@ -65,7 +65,8 @@
         android:layout_columnWeight="1"
         android:layout_gravity="center"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="300dp"
+        android:layout_below="@+id/editFare"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="-100dp"
         android:layout_marginBottom="11dp"
         app:cardBackgroundColor="#967259"
@@ -90,15 +91,17 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/viewDriver"
         android:layout_width="171dp"
         android:layout_height="50dp"
         android:layout_rowWeight="1"
+        android:layout_below="@+id/editDriver"
         android:layout_columnWeight="1"
         android:layout_gravity="center"
         android:layout_marginStart="125dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="-100dp"
         android:layout_marginBottom="11dp"
         app:cardBackgroundColor="#967259"
@@ -122,6 +125,101 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewusers"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_below="@+id/viewDriver"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginBottom="11dp"
+        app:cardBackgroundColor="#967259"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View User Rides"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAnalytics"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_below="@+id/viewusers"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginBottom="11dp"
+        app:cardBackgroundColor="#967259"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Analytics"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSettings"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_below="@+id/cardAnalytics"
+        android:layout_gravity="center"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginBottom="11dp"
+        app:cardBackgroundColor="#967259"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 

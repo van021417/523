@@ -41,12 +41,13 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
+        <EditText
             android:id="@+id/mobile"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="47dp"
             android:layout_marginBottom="15dp"
+            android:enabled="false"
             android:text=""
             android:textColor="@color/black"
             android:textSize="17sp"

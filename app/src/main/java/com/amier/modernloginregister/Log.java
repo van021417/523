@@ -79,10 +79,12 @@ if(sharedPreferences.getBoolean("loggedin",false)) {
             @Override
             public void onClick(View view) {
 
+
                 email = String.valueOf(textInputEditTextemail2.getText());
                 password = String.valueOf(textInputEditTextpassword2.getText());
 
                 if ( !email.equals("") && !password.equals("")) {
+
                     loginuser();
 
                 } else {
@@ -165,4 +167,5 @@ if(sharedPreferences.getBoolean("loggedin",false)) {
         RequestQueue requestQueue= Volley.newRequestQueue(Log.this);
         requestQueue.add(stringRequest);
     }
+
     }

@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:layout_centerInParent="true"
 
         >
@@ -18,26 +18,25 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp"
             app:cardUseCompatPadding="true"
             card_view:cardCornerRAdius="5dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="23dp"
                 android:background="@drawable/profile_mobile_bg"
                 android:orientation="vertical">
 
-                <TextView
+                <EditText
                     android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="50dp"
                     android:gravity="center"
                     android:text=""
+                    android:enabled="false"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold" />

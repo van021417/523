@@ -9,12 +9,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import com.example.lakbaydestination.MainDestination;
-
 
 public class AdminDB extends AppCompatActivity implements View.OnClickListener {
 
-    public CardView cardFare, cardDriver, cardViewDriver;
+    public CardView cardFare, cardDriver, cardViewDriver,cardSettings,userrider,analytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +21,22 @@ public class AdminDB extends AppCompatActivity implements View.OnClickListener {
 
         cardFare = findViewById(R.id.editFare);
         cardDriver = findViewById(R.id.editDriver);
+        analytics=findViewById(R.id.cardAnalytics);
         cardViewDriver = findViewById(R.id.viewDriver);
-
+        userrider=findViewById(R.id.viewusers);
+        cardSettings = findViewById(R.id.cardSettings);
         cardFare.setOnClickListener(view -> showToast("Edit Fare"));
         cardDriver.setOnClickListener(view -> showToast("Add Driver"));
         cardViewDriver.setOnClickListener(view -> showToast("View Driver"));
+        cardSettings.setOnClickListener(view -> showToast("Settings"));
 
         cardFare.setOnClickListener(this);
+
         cardDriver.setOnClickListener(this);
         cardViewDriver.setOnClickListener(this);
+        analytics.setOnClickListener(this);
+        userrider.setOnClickListener(this);
+        cardSettings.setOnClickListener(this);
     }
 
     private void showToast(String message) {
@@ -47,13 +52,25 @@ public class AdminDB extends AppCompatActivity implements View.OnClickListener {
         Intent i;
 
         if (id == cardFare.getId()) {
-            i = new Intent(this, MainDestination.class);
+            i = new Intent(this, AdminFare.class);
             startActivity(i);
         } else if (id == cardDriver.getId()) {
             i = new Intent(this, AdminDriver.class);
             startActivity(i);
         } else if (id == cardViewDriver.getId()) {
             i = new Intent(this, AdminViewDriver.class);
+            startActivity(i);
+        }
+        else if (id == userrider.getId()) {
+            i = new Intent(this, ViewUsersRides.class);
+            startActivity(i);
+        }
+        else if (id == analytics.getId()) {
+            i = new Intent(this, ShowAnalytics.class);
+            startActivity(i);
+        }
+        else if (id == cardSettings.getId()) {
+            i = new Intent(this, Settings.class);
             startActivity(i);
         }
     }
